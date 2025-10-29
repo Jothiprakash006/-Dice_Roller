@@ -1,0 +1,104 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: radial-gradient(circle at center, #0f2027, #203a43, #2c5364);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+#container {
+  text-align: center;
+  padding: 40px 60px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  transition: 0.3s ease-in-out;
+}
+
+#container:hover {
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.6);
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 0 0 15px cyan;
+}
+
+label {
+  font-size: 1.3rem;
+  margin-right: 10px;
+}
+
+input {
+  font-size: 1.5rem;
+  width: 100px;
+  text-align: center;
+  border: 2px solid cyan;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: cyan;
+  font-weight: bold;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #00ffcc;
+  box-shadow: 0 0 10px #00ffcc;
+}
+
+button {
+  font-size: 1.3rem;
+  padding: 12px 25px;
+  border-radius: 10px;
+  border: none;
+  margin-left: 15px;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #0072ff, #00c6ff);
+  box-shadow: 0 0 15px #00c6ff;
+}
+
+#diceResult {
+  margin-top: 25px;
+  font-size: 1.5rem;
+  color: #00ffff;
+  text-shadow: 0 0 10px #00ffff;
+}
+
+#diceImages {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+#diceImages img {
+  width: 80px;
+  height: 80px;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 0 10px cyan);
+}
+
+#diceImages img:hover {
+  transform: rotate(10deg) scale(1.2);
+}
